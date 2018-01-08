@@ -1,0 +1,11 @@
+<widget id="com.md.cornerangle" version="1.0.0">
+        <name>Corner Angle</name>
+        <description>
+            Simple tool to calculate or check angle of a corner.
+        </description>
+        <author>
+            Marin Duplancic
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+</widget>
