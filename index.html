@@ -53,24 +53,24 @@
 		}
 	}
 </script>
-<body>
+<body onload="updResult()">
 	<img style="height:180px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADrAgMAAAAqKvNZAAAADFBMVEUBBABJS0iWmJT9//zt7xQ4AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAAd0SU1FB+IBCAsDCqghREoAAAU0SURBVGje7dq9b9tGFADwsww4KDw4swtUewuUf4K0ZfDQFig6dAmQKUgHzp2oKRk0WMhYDS4CA02lQX+BQ6NjFwtZNGiQbSQWEA2RY1kiZfKuPMqk+HEf7+7QFkUlwIYI6Qce39093j0KEYMX2uD/KA42eIM3eIM3eIM3+G/Gdya4aYBvHQN8YXLNT1197J9Y+niId7UxdkhFG18R0nB18REhp5Ym9qOznu9p4kH0N93Ww5i2eIb08Jz+81BNC7fpvxBZOjiMOwkjVwePV+8/07lmbK/ev3E0sJ8c9DRwOzk4U8dh2tqJOr5MD+bq+HF6ECpjf9272FXFw8yRo4iTTo5fIxhObg+zL7IfTtTw+DD74QKEp+j+Nc611Ied+eb+8Ppx9kNZuO/xpyRg+a/XQPiSjY9A+IKNhyDcZ+MFCJ+y8dIEhy4Iu0wsGd33uMHBPRB22HgEwXUOHkNwcmsp4qUJDgEY8zB2AGd+xYk2sRWmZAmfmeCJCZ6b4NAECzORDAunhhSPBOeX4jjcM00cZ6Lnms2miT+0NDG93AvdgNHEf6CNe8RztPGQvNTuZ7LAVX28DBx9HGJLHxPn0AD3BgZ4dGmAx3cGeEkMcGCCsUE/CxI/BI9M8MQEz01waIK5iR+CiWOCj0zwxAQvTLBvgnlLUBDmrfhjjB9JcI+PccOW4CEX49Y3smYvuLj11ZkML3k42CFSHPLP/JMUc0Y37Jo54Y6jXe8x8ESeieJ+XjL6OcwVaMZqI+zipCbNRFzczN1ZAzVs5RYE7ExUwO+iDXhcgcO1oCZN/MUztxLs3BJXFu4iflNHlVU7B74jy0Sla/bRDo0U/rp6viubGuWAvdt978Z7vOevZKObEe12XNS6xtW5LNzMrorrQ577STY12P1MO+YtGcgSPxvT9U8zv9idgHFcjQutTuaLN/DhSRs5O0GOOPFzMA304Nq1xYmfg+lXjwbkhTjcvFlll0LWg2PaTVZuVzOC41t6h8rtxRZwTC/aeitJ/NxMEl30j7nNRXgHx0Pi9nO5BG/D8YLY+Y2cV4FjnzRf5L45RXCM3X5+V+OVy/T8ZUVxROHy0wU+Lk3ghgXHpQl8XoXj0gSe7cFxaUSFD+C4fG/bhuNysv1DYQVY6pmpD8el2e+14bg0+0sVDxV85cLxRLpbENQAi3nHdxWqj0U8UKl7FoYYtlVwKN0UCmq9QT7jtbmYVWVuPBCHS1jfPs09RB7z75KnMoxtAWYMkn4W3xI1nHsM3BZg1nOMaVW2pxM8QZlmznwlWjKznt1kEh62RZj11Mjbk21jBVMyWF9zU4TTJ2XBfpeBQ0d45mQY4w5Cz7rFrHNFQJjOxN8jT5Pfeodii3H+9eEYbXVcYkl2/dxfmnZ+RZV9VzC6GBhn/bdoJ1q64gNXAxMXdxpo//UTAsSlW+OyU/cy3aeGo+5+EnXfl109jA8y3SfE/B8LfXiNUKenidfdz8ULSb2gc4wqa1/AN/LaTqcVdb+riensacXDR7XZa1+Ptj6AgHFG59Ll4v7nMlxudroa+PNYWrjk47M09ehgXFPGH5M3h2tM/hGcrr0O1zssME4fgDa+E1d2hPiXl+o4bbbtE+VmpwGzPKIfbStQx2meqQWSsqUQe/oYW3N1bHe+X5WO0TYgJ6LCfhGhLQJOqIUz/xzprjwzsXHNj1J7K3dzuYFj4qM4va7WFnQJBcdR+nifpNfIh8hWaHYhPT9FW707LUxnVBT83wzwwx1t/ENX9BsH+Q8cjfDHfw2TDf6/478ARzma5PjQrmAAAAAASUVORK5CYII=">
 	<table>
 		<tr>
 			<td><label>A = </label></td>
-			<td><input type="text" name="inp_A" oninput="updResult()" value="0"></td>
+			<td><input type="number" step="0.001" name="inp_A" oninput="updResult()" value="1"></td>
 		</tr>
 		<tr>
 			<td><label>B = </label></td>
-			<td><input type="text" name="inp_B" oninput="updResult()" value="0"></td>
+			<td><input type="number" step="0.001" name="inp_B" oninput="updResult()" value="1"></td>
 		</tr>
 		<tr>
 			<td><input type="radio" name="inputParam" value="ang" checked onchange="updRadio()"><label> ang = </label><br></td>
-			<td><input type="text" name="ang" oninput="updResult()" value="90"></td>
+			<td><input type="number" step="0.001" name="ang" oninput="updResult()" value="90"></td>
 		</tr>
 		<tr>
 			<td><input type="radio" name="inputParam" value="len" onchange="updRadio()"> L = <br></td>
-			<td><input type="text" name="len" oninput="updResult()" value="0"></td>
+			<td><input type="number" step="0.001" name="len" oninput="updResult()" value="0" disabled></td>
 		</tr>			
 	</table>
 </body>
